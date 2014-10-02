@@ -2,14 +2,109 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
+@mixin title(){
+  .title_one,
+  .title_two,
+  .title_three {
+    background-color: HSLA(184, 100%, 42%, 1);
+    font-family: sans-serif;
+    font-size: 27px;
+    font-weight: 100;
+    color: white;
+    padding: 10px;
+  }
+}
+
+
+.content{
+  font-family: arial;
+  font-size: 14px;
+  color: grey;
+  height:0px;
+  overflow:auto;
+  }
+
+
+@mixin hover{
+  background-color: HSLA(185, 100%, 45%, 1);
+  width:504px;
+  height:51px;
+}
+
+.b{
+  padding:22px;
+  height:157px;
+  font-family: arial;
+  font-size: 14px;
+  color: grey;
+}
+
+//section border color
+$b: 1px solid HSLA(185, 100%, 38%, 1);
+
+
+
 // Custom Styles
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+  padding:25px;
+  @include outer-container;
 }
 
-.hero-unit {
+.sec_one {
+  border: $b;
+  @include span-columns(6);
+  @include shift(3);
+  @include title;
+
+
+}
+.title_one:hover {
+  @include hover;
+}
+
+.sec_two {
+  border:$b;
+  @include span-columns(6);
+  @include shift(3);
+  @include title;
+
+}
+
+.title_two:hover {
+  @include hover;
+}
+.sec_three {
+  border: $b;
+  @include span-columns(6);
+  @include shift(3);
+  @include title;
+
+}
+
+.title_three:hover {
+  @include hover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .hero-unit {
   margin: 50px auto 0 auto;
   width: 600px;
   font-size: 18px;
@@ -23,4 +118,4 @@ body {
     line-height: 1;
     letter-spacing: -1px;
   }
-}
+} */

@@ -1,3 +1,5 @@
-## Yo, I'm a Readme
+## accodion application
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+#description:
+
+3 tab window that opens and collapses on click.
