@@ -15,7 +15,6 @@
   }
 }
 
-
 .content{
   font-family: arial;
   font-size: 14px;
@@ -28,6 +27,7 @@
   background-color: HSLA(185, 100%, 45%, 1);
   width:504px;
   height:51px;
+  transition: background-color 6s ease;
 }
 
 .b{
@@ -37,7 +37,9 @@
   font-family: arial;
   font-size: 14px;
   color: grey;
+transition:all 6s ease;
 }
+
 
 //section border color
 $b: 1px solid HSLA(185, 100%, 38%, 1);
