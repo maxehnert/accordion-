@@ -1,16 +1,17 @@
-// $('.a').click(function() {
-// console.log('test 2');
-// $('.content_one').removeClass('content');
-//     $( '.b' ).addClass('add-content');
-//
-//   });
-// console.log('test 1')
-
 
 $('.a').click(function(){
 
-  $(this).removeClass('content');
+// $(this).next().removeClass('content');
 
-  $('.c').addClass('b');
+$(this).next().addClass('b');
 
+//$('.c').removeClass('b');
+//
+// $('.c').addClass('content');
+});
+
+
+$('.a').click(function(){
+  $(this).next().removeClass('b');
+$(this).next().addClass('content');
 });

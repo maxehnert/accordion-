@@ -22,8 +22,7 @@
   color: grey;
   height:0px;
   overflow:auto;
-  }
-
+}
 
 @mixin hover{
   background-color: HSLA(185, 100%, 45%, 1);
@@ -33,7 +32,8 @@
 
 .b{
   padding:22px;
-  height:157px;
+  height:100%;
+  width: 100%;
   font-family: arial;
   font-size: 14px;
   color: grey;
@@ -41,7 +41,7 @@
 
 //section border color
 $b: 1px solid HSLA(185, 100%, 38%, 1);
-
+$br: 5px;
 
 
 // Custom Styles
@@ -55,6 +55,7 @@ body {
 
 .sec_one {
   border: $b;
+  border-radius: $br;
   @include span-columns(6);
   @include shift(3);
   @include title;
@@ -67,6 +68,7 @@ body {
 
 .sec_two {
   border:$b;
+  border-radius: $br;
   @include span-columns(6);
   @include shift(3);
   @include title;
@@ -78,6 +80,7 @@ body {
 }
 .sec_three {
   border: $b;
+  border-radius: $br;
   @include span-columns(6);
   @include shift(3);
   @include title;
@@ -87,12 +90,6 @@ body {
 .title_three:hover {
   @include hover;
 }
-
-
-
-
-
-
 
 
 
