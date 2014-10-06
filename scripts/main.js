@@ -1,16 +1,32 @@
-// $('.a').click(function() {
-// console.log('test 2');
-// $('.content_one').removeClass('content');
-//     $( '.b' ).addClass('add-content');
+// $('.a').click(function(){
 //
-//   });
-// console.log('test 1')
-
+//   $('.c').removeClass('b');
+//
+//   $(this).next().addClass('b');
+//
+//   if( $('.a').hasClass('b')){
+//     $('.a').click(function(){
+//
+//       $('.c').removeClass('b');
+//     });
+//   }
+//
+// });
 
 $('.a').click(function(){
 
-  $(this).removeClass('content');
+  if($(this).next().hasClass('b')){
+    $('.c').removeClass('b');
+  }
 
-  $('.c').addClass('b');
+  else{
+    $('.c').removeClass('b');
+    $(this).next().addClass('b');
 
+  }
+// $('.a').click(function(){
+//
+//   $('.c').removeClass('b');
+// //event.preventDefault();
+//
 });
