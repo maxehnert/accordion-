@@ -27,7 +27,7 @@
   background-color: HSLA(185, 100%, 45%, 1);
   width:504px;
   height:51px;
-  transition: background-color 6s ease;
+//  transition: background-color 6s ease;
 }
 
 .b{
@@ -37,7 +37,7 @@
   font-family: arial;
   font-size: 14px;
   color: grey;
-transition:all 6s ease;
+transition:all 0.2s ease;
 }
 
 
@@ -48,7 +48,7 @@ $br: 5px;
 
 // Custom Styles
 body {
-  background:black /* #fafafa */;
+  background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   padding:25px;
